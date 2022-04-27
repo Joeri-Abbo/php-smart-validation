@@ -1,0 +1,46 @@
+{
+  "name": "joeriabbo/smart-validation",
+  "description": "Laravel smart validation Package",
+  "type": "library",
+  "version": "dev-master",
+  "authors": [
+    {
+      "name": "Joeri Abbo",
+      "email": "joeriabbo@hotmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Tracefy\\SmartValidation\\": "src/"
+    }
+  },
+  "require-dev": {
+    "orchestra/testbench": "^7.3",
+    "pestphp/pest": "^1.21"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "JoeriAbbo\\SmartValidation\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/pest",
+    "post-autoload-dump": [
+      "@php ./vendor/bin/testbench package:discover --ansi"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true,
+      "phpstan/extension-installer": true,
+      "composer/package-versions-deprecated": true
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "JoeriAbbo\\SmartValidation\\StatisticsPackageServiceProvider"
+      ]
+    }
+  }
+}
