@@ -40,7 +40,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "JoeriAbbo\\SmartValidation\\StatisticsPackageServiceProvider"
+        "JoeriAbbo\\SmartValidation\\SmartValidationPackageServiceProvider"
       ]
     }
   }
