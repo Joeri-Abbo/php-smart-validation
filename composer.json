@@ -11,12 +11,13 @@
   ],
   "autoload": {
     "psr-4": {
-      "Tracefy\\SmartValidation\\": "src/"
+      "JoeriAbbo\\SmartValidation\\": "src/"
     }
   },
   "require-dev": {
     "orchestra/testbench": "^7.3",
-    "pestphp/pest": "^1.21"
+    "pestphp/pest": "^1.21",
+    "filp/whoops": "^2.14"
   },
   "autoload-dev": {
     "psr-4": {
