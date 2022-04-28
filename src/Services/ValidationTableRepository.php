@@ -58,6 +58,8 @@ class ValidationTableRepository
             case 'mediumtext':
             case 'text':
             case 'varchar':
+                $column_rules[] = 'string';
+                break;
             case 'datetime':
             case 'timestamp':
             case 'date':
@@ -97,7 +99,7 @@ class ValidationTableRepository
      * @param string $table
      * @return array
      */
-    private function getValidationRulesForColumns(?array $columns, string$table): array
+    private function getValidationRulesForColumns(?array $columns, string $table): array
     {
         $rules = [];
         foreach ($columns as $column) {
