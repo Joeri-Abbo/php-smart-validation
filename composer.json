@@ -2,7 +2,7 @@
   "name": "joeriabbo/smart-validation",
   "description": "Laravel smart validation Package",
   "type": "library",
-  "version": "dev-master",
+  "version": "dev-main",
   "authors": [
     {
       "name": "Joeri Abbo",
