@@ -48,9 +48,6 @@ class ValidationTableRepository
             $column_rules[] = 'unique:' . $table;
         }
 
-        if (!empty($max_number = $this->getStringBetween($column->Type, '(', ')'))) {
-            $column_rules[] = 'max:' . $max_number;
-        }
         switch (strtok($column->Type, '(')) {
             case 'char':
             case 'tinytext':
