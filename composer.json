@@ -15,8 +15,8 @@
     }
   },
   "require-dev": {
-    "orchestra/testbench": "^7.3",
-    "pestphp/pest": "^1.21",
+    "orchestra/testbench": "^9.0|^10.0",
+    "pestphp/pest": "^3.0",
     "filp/whoops": "^2.14"
   },
   "autoload-dev": {

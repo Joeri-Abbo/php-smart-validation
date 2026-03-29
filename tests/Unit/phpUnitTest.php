@@ -2,15 +2,13 @@
 
 namespace Tests\Api;
 
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
 class phpUnitTest extends TestCase
 {
-
-    /**
-     * @test
-     */
-    public function DoesPHPUnitTestWork()
+    #[Test]
+    public function DoesPHPUnitTestWork(): void
     {
         $this->assertEquals(true, true);
     }
